@@ -1,0 +1,44 @@
+body {
+	background-image:url(../../images/back.png);
+	background-repeat:repeat;
+}
+
+/* Content */
+.content{
+	background:#FFF; /* Old browsers */
+	border-color: #1570a6;                 /*Main Color*/              
+}
+.content p{                       
+	border-color: #1570a6;                 /*Main Color*/
+	color:#333333;	
+}
+.content h4{
+	color:#1570a6;                         /*Main Color*/                   
+}
+.content h6{
+	color:#333333;
+}
+.content h6 i{
+	color: #1570a6;                        /*Main Color*/     
+}
+
+/* Label */
+.label i{
+	color:#333333;
+}
+/* Label default background */
+.default{
+	background: #F1F1F1;                         
+	color:#333333;
+}
+/* Label Clicked background */
+.clicked{
+	background: #1570a6;                    /*Main Color*/                  
+	color:#f3f6ed;
+}
+/* Label hover background */
+.hover{
+	background: #1570a6;                    /*Main Color*/                   
+	color:#f3f6ed;
+}
+

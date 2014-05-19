@@ -1,0 +1,268 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+            
+<hibernate-mapping>  
+<class name="com.kishan.bean.Profile" table="profile21">  
+<id name="pid">  
+<generator class="native"></generator> 
+</id>  
+
+
+<property name="religion" column="religion" length="200"/>
+
+<property name="category" column="category" length="200"/>
+
+<property name="community" column="community" length="200"/>
+
+<property name="zone" column="zone" length="200"/>
+
+<property name="state" column="state" length="200"/>
+
+<property name="subcommunity" column="subcommunity" length="200"/>
+
+<property name="district" column="district" length="200"/>
+
+<property name="tehseel" column="tehseel" length="200"/>
+
+<property name="location" column="location" length="200"/>
+
+<property name="address" column="address" length="200"/>
+
+<property name="pincode" column="pincode" length="200"/>
+
+<property name="dob" column="dob" length="200"/>
+
+<property name="tob" column="tob" length="200"/>
+
+<property name="pob" column="pob" length="200"/>
+   </class> 
+   
+   
+   <class name="com.kishan.bean.Religion" table="religion">  
+<id name="rid">  
+<generator class="native"></generator> 
+</id>  
+<property name="religion" column="religion" length="200"/>
+
+<set name="comm" table="community" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="rid" not-null="true" />
+            </key>
+            <one-to-many class="com.kishan.bean.Community" />
+        </set>            
+   </class>    
+   
+   
+   
+   
+    <class name="com.kishan.bean.Category" table="category">  
+<id name="cid">  
+<generator class="native"></generator> 
+</id>  
+<property name="category" column="category" length="200"/>
+
+   </class> 
+   
+   
+   
+   
+   <class name="com.kishan.bean.Community" table="community">  
+<id name="comid">  
+<generator class="native"></generator> 
+</id> 
+ <many-to-one name="rel" class="com.kishan.bean.Religion" fetch="select">
+            <column name="rid" not-null="true" />
+        </many-to-one>
+<property name="community" column="community" length="200"/>
+
+<set name="zon" table="Zone" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="comid" not-null="true" />
+            </key>
+            <one-to-many class="com.kishan.bean.Community" />
+        </set>
+   </class> 
+     
+   
+   
+    <class name="com.kishan.bean.Zone" table="zone">  
+<id name="zid">  
+<generator class="native"></generator> 
+</id>  
+
+
+<property name="zone" column="zone" length="200"/>
+
+<set name="stat" table="state" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="stid" not-null="true" />
+            </key>
+            <one-to-many class="com.kishan.bean.State" />
+        </set>
+
+<many-to-one name="comm" class="com.kishan.bean.Community" fetch="select">
+            <column name="comid" not-null="true" />
+        </many-to-one>
+   </class> 
+   
+   
+   
+   
+   
+       <class name="com.kishan.bean.State" table="state">  
+<id name="stid">  
+<generator class="native"></generator> 
+</id>  
+
+
+<property name="state" column="state" length="200"/>
+
+<set name="subcomm" table="subcommunity" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="subcomid" not-null="true" />
+            </key>
+            <one-to-many class="com.kishan.bean.SubCommunity" />
+        </set>
+
+<many-to-one name="zon" class="com.kishan.bean.Zone" fetch="select">
+            <column name="zid" not-null="true" />
+        </many-to-one>
+
+
+   </class> 
+  
+   
+    <class name="com.kishan.bean.SubCommunity" table="subcommunity">  
+<id name="subcomid">  
+<generator class="native"></generator> 
+</id>  
+<!-- <property name="stid" column="stid" /> -->
+<property name="subcommunity" column="subcommuinty" length="200"/>
+  
+  <set name="distric" table="district" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="disid" not-null="true" />
+            </key>
+            <one-to-many class="com.kishan.bean.District" />
+        </set>
+
+<many-to-one name="stat" class="com.kishan.bean.State" fetch="select">
+            <column name="stid" not-null="true" />
+        </many-to-one> 
+  
+   </class> 
+   
+  
+   
+      <class name="com.kishan.bean.District" table="district">  
+<id name="disid">  
+<generator class="native"></generator> 
+</id>  
+<property name="district" column="district" length="200"/>
+
+
+<set name="tehs" table="tehseel" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="tehid" not-null="true" />
+            </key>
+            <one-to-many class="com.kishan.bean.Tehseel" />
+        </set>
+
+<many-to-one name="subcomm" class="com.kishan.bean.SubCommunity" fetch="select">
+            <column name="subcomid" not-null="true" />
+        </many-to-one> 
+
+
+   </class> 
+   
+   
+   <class name="com.kishan.bean.Tehseel" table="tehseel">  
+<id name="tehid">  
+<generator class="native"></generator> 
+</id>  
+
+
+<property name="tehseel" column="tehseel" length="200"/>
+
+<set name="vill" table="village" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="vid" not-null="true" />
+            </key>
+            <one-to-many class="com.kishan.bean.Village" />
+        </set>
+        
+        
+<set name="are" table="area" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="arid" not-null="true" />
+            </key>
+            <one-to-many class="com.kishan.bean.Area" />
+        </set>
+
+<many-to-one name="distric" class="com.kishan.bean.District" fetch="select">
+            <column name="disid" not-null="true" />
+        </many-to-one> 
+</class> 
+
+
+   
+
+   <class name="com.kishan.bean.Village" table="village">  
+<id name="vid">  
+<generator class="native"></generator> 
+</id>  
+<!-- <property name="tehid" column="tehid" /> -->
+
+<property name="village" column="village" length="200"/>
+
+<many-to-one name="tehs" class="com.kishan.bean.Tehseel" fetch="select">
+            <column name="tehid" not-null="true" />
+        </many-to-one> 
+   </class>   
+   
+   
+   <class name="com.kishan.bean.Area" table="area">  
+<id name="arid">  
+<generator class="native"></generator> 
+</id>  
+<!-- <property name="tehid" column="tehid" /> -->
+
+<property name="area" column="area" length="200"/>
+
+<many-to-one name="tehs" class="com.kishan.bean.Tehseel" fetch="select">
+            <column name="tehid" not-null="true" />
+        </many-to-one> 
+   </class>   
+   
+   <class name="com.kishan.bean.Education" table="education">
+		<id name="sn">
+			<generator class="native"></generator>
+		</id>
+
+		<property name="qualification" column="qualification" length="200" />
+		<property name="course" column="course" length="200" />
+		<property name="university" column="university" length="200" />
+		<property name="subject" column="subject" length="200" />
+		<property name="passyear" column="passyear" length="200" />
+		<property name="address" column="address" length="200" />
+		<property name="teacher" column="teacher" length="200" />
+	</class>
+	
+	
+	<class name="com.kishan.bean.Career" table="career">
+		<id name="sn">
+			<generator class="native"></generator>
+		</id>
+	
+		<property name="occupation" column="occupation" length="200" />
+		<property name="organization" column="organization" length="200" />
+		<property name="jobnature" column="jobnature" length="200" />
+		<property name="startdate" column="startdate" length="200" />
+		<property name="enddate" column="enddate" length="200" />
+		<property name="income" column="income" length="200" />
+		<property name="comment" column="comment" length="200" />
+	</class>
+	  
+   </hibernate-mapping>

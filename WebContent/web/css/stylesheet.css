@@ -1,0 +1,497 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@font-face {
+    font-family: 'ArialRoundedMTBoldRegular';
+    src: url('../fonts/arlrdbd.eot');
+    src: url('../fonts/arlrdbd.eot') format('embedded-opentype'),
+         url('../fonts/arlrdbd.woff') format('woff'),
+         url('../fonts/arlrdbd.ttf') format('truetype'),
+         url('../fonts/arlrdbd.svg#ArialRoundedMTBoldRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'CalibriRegular';
+    src: url('../fonts/calibri.eot');
+    src: url('../fonts/calibri.eot') format('embedded-opentype'),
+         url('../fonts/calibri.woff') format('woff'),
+         url('../fonts/calibri.ttf') format('truetype'),
+         url('../fonts/calibri.svg#CalibriRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'MyriadProRegular';
+    src: url('../fonts/myriadpro-regular.eot');
+    src: url('../fonts/myriadpro-regular.eot') format('embedded-opentype'),
+         url('../fonts/myriadpro-regular.woff') format('woff'),
+         url('../fonts/myriadpro-regular.ttf') format('truetype'),
+         url('../fonts/myriadpro-regular.svg#MyriadProRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'CenturyGothicRegular';
+    src: url('../fonts/gothic.eot');
+    src: url('../fonts/gothic.eot') format('embedded-opentype'),
+         url('../fonts/gothic.woff') format('woff'),
+         url('../fonts/gothic.ttf') format('truetype'),
+         url('../fonts/gothic.svg#CenturyGothicRegular') format('svg');
+}
+
+
+body
+{
+	width:100%;
+	margin:0 auto;
+	 }
+	 
+	 .body_section
+	 {
+		 height:100%;
+		 width:100%;
+		 margin:0 auto;
+	     background:url(../images/bg.jpg);
+	 }
+
+/*=================================================== ** Main Section Of Body Open** =========================================*/
+
+#main
+{
+	height:100%;
+	width:1000px;
+	margin:0 auto;
+	padding-bottom:30px;
+	}
+	
+
+/*========================================== ** Header Section Open ** ==============================*/
+.header
+{
+	height:99px;
+	width:100%;
+	background:url(../images/header.jpg);
+	background-repeat:repeat-x;
+}
+
+	.header_mid
+	{
+		height:99px;
+		width:1000px;
+		margin:auto;
+	}
+	
+		.logo
+		{
+			height:72px;
+			width:310px;
+			float:left;
+			margin-top:10px;
+			background:url(../images/logo.png);
+			background-repeat:no-repeat;
+			}
+		
+		.user_img
+		{
+		float: right;
+		height: 68px;
+		margin-right: 50px;
+		margin-top: 15px;
+		width: 70px;
+			border-radius:35px;
+			-moz-border-radius:35px;
+			-ms-border-radius:35px;
+			-o-border-radius:35px;
+			-webkit-border-radius:35px;
+			background:url(../images/user_girl.png);
+			background-repeat:no-repeat;
+		}
+		
+		.user_drop
+		{
+		background:url(../images/icon.png);
+		background-repeat:no-repeat;
+		background-position:-44px -88px;
+		float: right;
+		height: 30px;
+		margin-right: -80px;
+		margin-top: 34px;
+		width: 30px;
+		}
+/*========================================== ** Header Section Closed ** ==============================*/
+
+/*========================================== ** Content Section Open ** ================================*/
+	.con_header
+	{
+		line-height:40px;
+		width:100%;
+		float:left;
+		color:#849103;
+		font-size:24px;
+		padding-top:40px;
+		text-align:center;
+		font-family: 'ArialRoundedMTBoldRegular' ;
+	}
+	
+	.con_small
+	{ 
+		line-height:40px;
+		width:100%;
+		float:left;
+		font-size:18px;
+		color:#757575;
+		padding-top:12px;
+		text-align:center;
+		font-family: 'CalibriRegular';
+		}
+		
+		.clear
+		{
+			clear:both;
+		}
+		
+	.con_next
+	{
+		line-height:40px;
+		width:100%;
+		float:left;
+		padding-top:18px;
+		font-variant:normal;
+		text-align:center;
+		color:#757575;
+		font-size:24px;
+		font-weight:bold;
+		font-family: 'CalibriRegular';
+	}
+	
+	.gallery
+	{
+		height:172px;
+		width:100%;
+		float:left;
+		margin-top:26px;
+	}
+	
+	.img_box
+	{
+        float: left;
+        height: 172px;
+        margin-left: 21px;
+        width: 222px;
+	}
+	
+	.family
+	{
+	background: url("../images/family.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: left;
+    height: 122px;
+    margin-left: 40px;
+    text-align: center;
+    width: 163px;
+	}
+	
+	.family_con
+	{
+		line-height:20px;
+		width:168px;
+		float:left;
+		font-weight:bold;
+		font-family: 'CalibriRegular';
+		font-size:14px;
+		color:#757575;
+		text-align:center;
+		padding-left:40px;
+	}
+	
+	.tree
+	{
+	background: url("../images/tree.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: left;
+    height: 122px;
+    margin-left: 63px;
+    text-align: center;
+    width: 163px;
+	}
+	
+	.tree_con
+	{
+		line-height:20px;
+		width:168px;
+		float:left;
+		font-weight:bold;
+		font-family: 'CalibriRegular';
+		font-size:14px;
+		color:#757575;
+		text-align:center;
+		padding-left:37px;
+	}
+	
+	.book
+	{
+	background: url("../images/book.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: left;
+    height: 104px;
+    margin-left: 32px;
+    margin-top: 17px;
+    text-align: center;
+    width: 188px;
+	}
+	
+	.book_con
+	{
+		line-height:20px;
+		width:168px;
+		float:left;
+		font-weight:bold;
+		font-family: 'CalibriRegular';
+		font-size:14px;
+		color:#757575;
+		text-align:center;
+		padding-left:37px;
+	}
+	
+	.donate
+	{
+	background: url("../images/donate.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: left;
+    height: 104px;
+    margin-left: 63px;
+    margin-top: 17px;
+    text-align: center;
+    width: 163px;
+	}
+	
+	.donate_con
+	{
+		line-height:20px;
+		width:168px;
+		float:left;
+		font-weight:bold;
+		font-family: 'CalibriRegular';
+		font-size:14px;
+		color:#757575;
+		text-align:center;
+		padding-left:37px;
+	}
+
+	.right_top
+	{ 
+	width:10px; 
+	float:right;
+	}
+		
+		
+		.footer
+		{
+			height:27px;
+			width:100%;
+			float:left;
+			background:#1570a6;
+			z-index::9999;
+		}
+		
+		.footer_mid
+		{
+			height:10px;
+			width:1000px;
+			margin:auto;
+			padding-left:3px;
+			padding-top:3px;
+			}
+			
+			.footer_menu a
+			{
+				font-size:12px ;
+				color:#ffffff;
+				margin-left: 7px;
+                margin-right: 10px;
+				font-family: 'MyriadProRegular';
+				text-decoration:none;
+			}
+			
+			.footer_menu a:hover
+			{
+				font-size:12px ;
+				color:#CCC;
+				margin-left: 7px;
+                margin-right: 10px;
+				font-family: 'MyriadProRegular';
+				text-decoration:none;
+			}
+			
+/*============================== ** Activation Box Open ** ====================================*/
+			
+			#activation_box
+			{
+				height:114px;
+				width:905px;
+				margin-left:52px;
+				float:left;
+				margin-top:30px;
+			}
+			
+			.activation_heading_box
+			{
+				height:34px;
+				width:905px;
+				float:left;
+				background:#649a05;
+				border-top-left-radius:10px;
+				border-top-right-radius:10px;
+				
+			}
+			
+			.activation_heading
+			{
+				font-family: 'Calibri';
+				font-size:18px;
+				color:#FFF;
+				font-weight:bold;
+				padding-left: 23px;
+                padding-top: 4px;
+			}
+			
+			.mail_alert
+			{
+				height:70px;
+				width:903px;
+				float:left;
+				background:#FFF;
+				border:1px solid #dad7d7;
+			}
+			
+			.mail_icon
+			{
+				background: url("../images/icon.png") no-repeat scroll -64px -112px rgba(0, 0, 0, 0);
+                float: left;
+                height: 51px;
+                margin-left: 8px;
+                margin-top: 6px;
+                width: 61px;
+			}
+			
+			.mail_message
+			{
+				float: left;
+                font-family: 'Calibri';
+                font-size: 18px;
+                height: 20px;
+                margin-left: 22px;
+                margin-top: 20px;
+                width: auto;
+				font-weight:bold;
+				color:#6c6c6c;
+             }
+			 
+			 .cssanimations #activation_box
+			  {
+                 -webkit-animation-direction: normal;
+                 -webkit-animation-duration: 5s;
+                 -webkit-animation-iteration-count: infinite;
+                 -webkit-animation-name: blink;
+                 -webkit-animation-timing-function: ease;   
+              }
+			/*============================== ** Activation Box Closed ** ====================================*/
+			
+			.link_bg
+			{
+	            height:50px;
+	            width:100%;
+				margin-top: 60px;
+				border-top:1px solid #e1eaeb;
+				background:url(../images/link_bg.jpg);
+				padding-top: 4px;
+				}
+				
+/*========================================== ** Content Section Closed ** ==============================*/
+.education_form
+{
+	height:200px;
+	width:100%;
+}
+.next
+{
+	height:30px;
+	width:180px;
+	float:right;
+	margin-top: -30px;
+}
+	
+.con_top_fix
+{
+	width:922px;
+	margin:auto;
+}
+
+.next_icon
+{
+	height:30px;
+	width:180px;
+	float:left;
+	background:url(../images/1h.png);
+	background-repeat:no-repeat;
+	position:absolute;
+}
+
+#dp1399899103462
+{
+display:none !important;
+}
+.datepicker-days{ display:none !important;}
+
+
+#datepicker2{
+padding-bottom: 3px;
+
+position: absolute;
+left: 28px;
+width: 220px !important;}
+#datepicker2:focus{padding-bottom: 3px;}
+
+#datepicker1{
+padding-bottom: 3px;
+position: absolute;
+left: 28px;
+width: 253px !important;}
+#datepicker1:focus{padding-bottom: 3px;}
+
+#datepicker{
+position: absolute;
+left: 28px;
+width: 260px !important;}
+
+#datepicker3{
+padding-bottom: 3px;
+position: absolute;
+left: 28px;
+width: 220px !important;}
+#datepicker3:focus{padding-bottom: 3px;}
+
+#datepicker4{
+padding-bottom: 3px;
+position: absolute;
+left: 28px;
+width: 220px !important;}
+#datepicker4:focus{padding-bottom: 3px;}
+
+#datepicker5{
+padding-bottom: 3px;
+position: absolute;
+left: 28px;
+width: 220px !important;}
+#datepicker5:focus{padding-bottom: 3px;}
+
+#datepicker6{
+padding-bottom: 3px;
+position: absolute;
+left: 28px;
+width: 220px !important;}
+#datepicker6:focus{padding-bottom: 3px;}
+
+#datepicker7{
+padding-bottom: 3px;
+position: absolute;
+left: 28px;
+width: 220px !important;}
+#datepicker6:focus{padding-bottom: 3px;}
+
+/*=================================================== ** Main Section Of Body Closed** =======================================*/

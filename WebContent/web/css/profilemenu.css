@@ -1,0 +1,322 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*================================================ ** Profile Page Start ** =================================================*/
+
+.menu_top
+{
+	height:55px;
+	width:100%;
+	float:left;
+	margin-bottom:1px;
+	border-left:1px solid #c6c6c6;
+	border-right:1px solid #c6c6c6;
+	background:#C93;
+}
+
+	.menu_top_left
+	{
+		height:55px;
+		width:50%;
+		float:left;
+		background:#1570a6;
+	}
+	
+		.menu_top_left_icon
+		{
+			background: url("../images/icon.png") no-repeat scroll -67px 4px rgba(0, 0, 0, 0);
+            float:right;
+            height: 54px;
+            width: 54px;
+			margin-right: 10px;
+		}
+		.menu_top_left_icon:hover
+		{
+			background: url("../images/icon.png") no-repeat scroll -130px 5px rgba(0, 0, 0, 0);
+            float:right;
+            height: 54px;
+            margin-left: 34px;
+            width: 54px;
+		}
+		.menu_top_left_heading
+		{
+			width:434px;
+			float:right;
+			background:url(../images/icon.png);
+			background:no-repeat;
+			background-position:0px 0px;
+			line-height:23px;
+			font-family: 'CenturyGothicRegular';
+			color:#ffffff;
+			font-size:22px;
+			margin-top: 13px;
+		}
+		
+		
+	.menu_top_arrow
+	{
+		height:55px;
+		width:34px;
+		float:left;
+		background:url(../images/arrow.jpg);
+		background-repeat:no-repeat;
+	}
+	
+	.menu_top_right
+	{
+		height:55px;
+		width:50%;
+		float:left;
+		 background-color: #dededd;
+		  background: url(../images/linear_bg_2.png); 
+		  background-repeat: repeat-x;
+		   /* Safari 4-5, Chrome 1-9 */ background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fefefd), to(#dededd));
+			/* Safari 5.1, Chrome 10+ */ background: -webkit-linear-gradient(top, #fefefd, #dededd); /* Firefox 3.6+ */
+			 background: -moz-linear-gradient(top, #fefefd, #dededd); /* IE 10 */ background: -ms-linear-gradient(top, #fefefd, #dededd);
+			  /* Opera 11.10+ */ background: -o-linear-gradient(top, #fefefd, #dededd); 
+			  }
+			  
+		.menu_top_right_icon
+		{
+			background: url("../images/icon.png") no-repeat scroll -79px -54px rgba(0, 0, 0, 0);
+            float: left;
+            height: 54px;
+            margin-left: 64px;
+            width: 61px;
+	 	}
+		
+		.menu_top_right_icon:hover
+		{
+		   background: url("../images/icon.png") no-repeat scroll -140px -54px rgba(0, 0, 0, 0);
+           float: left;
+           height: 54px;
+           margin-left: 64px;
+           width: 61px;
+	 	}
+		
+		.menu_top_right_heading
+		{
+			width:300px;
+			float:left;
+			background:url(../images/icon.png);
+			background:no-repeat;
+			background-position:0px 0px;
+			line-height:23px;
+			font-family: 'CenturyGothicRegular';
+			color:#939393;
+			font-size:22px;
+			margin-top: 13px;
+		}
+		
+		.con_top
+		{
+			height:87px;
+			width:100%;
+			float:left;
+			background:url(../images/headerbg.jpg);
+			border-left:1px solid #ffcb97; 
+			border-right:1px solid #ffcb97;
+			border-top:1px solid #adadad;
+			border-bottom:3px solid  #cec30f;
+		}
+		
+		.con_top_left_heading
+		{
+			background:transparent;
+			color: #797373;
+			font-family: 'CalibriRegular';
+			font-size: 24px;
+			line-height: 24px;
+			padding-top: 15px;
+			width: 415px;
+		}
+		
+		.con_top_left_matter
+		{
+			background:transparent;
+			color: #928C8C;
+			font-family: 'CalibriRegular';
+			font-size: 18px;
+			line-height: 18px;
+			padding-top: 14px;
+			width: 415px;
+					}
+		
+
+                                           
+/*================================================ ** Profile Page Closed ** ================================================*/
+
+
+
+/* Main menu */
+
+#menu{ list-style-type:none;}
+#menu li
+{
+	float:right;
+	padding: 0 0 10px 0;
+	position: relative;
+	line-height: 0;
+}
+
+#menu a 
+{
+	float:right;
+	height: 25px;
+	color:#333;
+	text-transform: uppercase;
+	font: bold 12px/25px Arial, Helvetica;
+	text-decoration: none;
+}
+
+#menu li:hover > a
+{
+
+}
+ #menu li a:hover /* IE6 */
+{
+
+}
+
+#menu li:hover > ul
+{
+	display: block;
+}
+
+/* Sub-menu */
+
+#menu ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;    
+    display: none;
+    top: 60px;
+    left: 0; position:absolute;
+	margin-right:-600px;
+    z-index: 99999; background:#fff; border:1px solid #ccc; border-radius:5px;    
+ 
+}
+
+#menu ul ul
+{
+  top: 0;
+}
+
+#menu ul li
+{
+    float: none;
+    margin: 0;
+    padding: 0;
+    display: block; border-bottom:1px solid #ccc;  
+}
+#menu  li ul {
+            margin-top: -4px;
+			 }
+			#menu  li span{color: #fff;}
+
+
+#menu ul li:last-child
+{   
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;    
+}
+
+#menu ul a
+{    
+    padding: 10px;
+	height: 10px;
+	width: 130px;
+	height: auto;
+    line-height: 1;
+    display: block;
+    white-space: nowrap;
+    float: none;
+	text-transform: none;
+}
+
+*html #menu ul a /* IE6 */
+{    
+	height: 10px;
+}
+
+*:first-child+html #menu ul a /* IE7 */
+{    
+	height: 10px;
+}
+
+#menu ul a:hover
+{
+    background: #0186ba;
+	background: -moz-linear-gradient(#04acec,  #0186ba);	
+	background: -webkit-gradient(linear, left top, left bottom, from(#04acec), to(#0186ba));
+	background: -webkit-linear-gradient(#04acec,  #0186ba);
+	background: -o-linear-gradient(#04acec,  #0186ba);
+	background: -ms-linear-gradient(#04acec,  #0186ba);
+	background: linear-gradient(#04acec,  #0186ba); color:#FFF;
+}
+
+#menu ul li:first-child > a
+{
+    -moz-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+}
+
+#menu ul li:first-child > a:after
+{
+    content: '';
+    position: absolute;
+    left: 136px;
+    top: -8px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid #09C;
+}
+
+#menu ul ul li:first-child a:after
+{
+    top: 12px;
+    width: 0;
+    height: 0;
+    border-left: 0;	
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    border-right: 8px solid #444;
+}
+
+#menu ul li:first-child a:hover:after
+{
+    border-bottom-color: #04acec; 
+}
+
+#menu ul ul li:first-child a:hover:after
+{
+    border-right-color: #04acec; 
+    border-bottom-color: transparent; 	
+}
+
+
+#menu ul li:last-child > a
+{
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+}
+
+/* Clear floated elements */
+#menu:after 
+{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+* html #menu             { zoom: 1; } /* IE6 */
+*:first-child+html #menu { zoom: 1; } /* IE7 */
+
+/*============================== ** Selection menu Closed ** ========================================*/

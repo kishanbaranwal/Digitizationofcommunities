@@ -1,0 +1,154 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'CalibriRegular';
+    src: url('../fonts/calibri.eot');
+    src: url('../fonts/calibri.eot') format('embedded-opentype'),
+url('../fonts/calibri.woff') format('woff'),
+url('../fonts/calibri.ttf') format('truetype'),
+url('../fonts/calibri.svg#CalibriRegular') format('svg');
+}
+
+.tabs a{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+}
+.tabs p{
+	font-size: 13px;
+	line-height: 24px;
+}
+.tabs p, .tabs h4{
+	font-family: 'CalibriRegular';
+}
+.tabs h4{
+	font-size: 19px;
+	letter-spacing:.1em;
+}
+.tabs h5{
+	font-family: 'CalibriRegular';
+	line-height: 33px;
+	font-size: 15px;
+
+}
+.tabs h6{
+	font-family: 'CalibriRegular';
+	font-style:italic;
+	line-height: 20px;
+}
+
+/*** Container All Tabs ********************/
+.tabs{
+	display: block;
+    height: 400px;
+    margin: 40px auto 0;
+    position: relative;
+    width: 90%;
+}
+
+/*** Container One Tab ********************/
+.container{
+	position: absolute;
+	top:0;
+	left: 0;	
+}
+
+/*** Tab Lebels ****************************/
+.label{
+	position: absolute;
+	width: 140px;
+	height: 50px;
+	left: 0px;
+}
+.container:nth-child(1) .label{
+	top: 15px;
+}
+.container:nth-child(2) .label{
+	top: 70px;
+}
+.container:nth-child(3) .label{
+	top: 125px;
+}
+.container:nth-child(4) .label{
+	top:180px;
+}
+
+.container:nth-child(5) .label{
+	top:235px;
+}
+
+.container:nth-child(6) .label{
+	top:290px;
+}
+.label h5 a{
+	border-radius: 9px 0 0;
+    height: 36px;
+	color: #42aeef;
+    transition: background-color 0.7s ease 0s;
+    width: 208px;
+	-webkit-border-radius: 15px 0 0 3px;
+	-moz-border-radius:3px 0 0 3px;
+	
+	transition:background-color .7s;
+	-webkit-transition:background-color .7s;
+	-moz-transition:background-color .7s;
+	-o-transition:background-color .7s;
+	-ms-transition:background-color .7s;
+}
+.label h5 a i{
+	border-radius: 9px 0 0;
+    height: 36px;
+    transition: background-color 0.7s ease 0s;
+    width: 140px;
+}
+
+/*** Content ******************************/
+.content{
+	position:absolute;
+	height: 359px;
+    width: 579px;
+	overflow:hidden;
+	left:208px;
+	padding: 10px;
+	
+	border-top:4px solid;
+	border-bottom:20px solid;
+	
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	
+}
+.content p{
+	padding: 2px 10px 5px 10px;
+	margin:10px 0 10px 15px;
+	border-left:10px solid;
+	text-align: justify;
+}
+.content h4{
+	margin-top: 12px;
+    padding: 0 0 0 15px;
+}
+.content h6{
+	padding:8px 15px 10px 15px;
+	margin:15px 10px;
+	
+	font-size:13px;
+	text-align: justify;
+	
+	border-top:1px solid #999999;
+}
+.content h6 i{
+	padding:0 5px;
+	font-size:10px;
+}
+
+/*** For Change Animation Effects *******************/
+.container:target .content{
+	-webkit-animation: bounce .6s 1;
+	animation: bounce .6s 1;
+}
+
+.default_click2
+{
+	background-color:#CCC;
+}

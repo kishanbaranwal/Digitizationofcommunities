@@ -1,0 +1,56 @@
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+ <definition name="baseLayout" template="/WEB-INF/view/jsp/layout.jsp">
+  <put-attribute name="title" value="Sample Title" ></put-attribute>
+  <put-attribute name="header" value="/WEB-INF/view/jsp/header.jsp" ></put-attribute>
+  <put-attribute name="body" value="" ></put-attribute>
+  <put-attribute name="footer" value="/WEB-INF/view/jsp/footer.jsp" ></put-attribute>
+ </definition>
+
+ 
+ 
+ <definition name="index" extends="baseLayout">
+  <put-attribute name="title" value="Index" ></put-attribute>
+  <put-attribute name="body" value="/WEB-INF/view/jsp/index.jsp" ></put-attribute>
+ </definition>
+ <definition name="home" extends="baseLayout">
+  <put-attribute name="title" value="Home" ></put-attribute>
+  <put-attribute name="body" value="/WEB-INF/view/jsp/home.jsp" ></put-attribute>
+ </definition>
+ 
+  <definition name="education" extends="baseLayout">
+  <put-attribute name="title" value="Home" ></put-attribute>
+  <put-attribute name="body" value="/WEB-INF/view/jsp/education.jsp" ></put-attribute>
+ </definition>
+ 
+ 
+  <definition name="education1" extends="baseLayout">
+  <put-attribute name="title" value="Home" ></put-attribute>
+  <put-attribute name="body" value="/WEB-INF/view/jsp/education1.jsp" ></put-attribute>
+ </definition>
+ 
+ <definition name="career" extends="baseLayout">
+  <put-attribute name="title" value="Home" ></put-attribute>
+  <put-attribute name="body" value="/WEB-INF/view/jsp/career.jsp" ></put-attribute>
+ </definition>
+ 
+ 
+ 
+ 
+ <definition name="dashboard" extends="baseLayout">
+  <put-attribute name="title" value="Home" ></put-attribute>
+  <put-attribute name="body" value="/WEB-INF/view/jsp/dashboard.jsp" ></put-attribute>
+ </definition>
+ 
+ 
+<definition name="familytree" extends="baseLayout">
+<put-attribute name="title" value="Familytree"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/view/jsp/familytree.jsp"></put-attribute>
+</definition>
+ 
+ 
+ 
+ 
+ 
+</tiles-definitions>  
